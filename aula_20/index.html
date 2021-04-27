@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 20</title>
+</head>
+<body>
+
+    <div id="root"></div>
+
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        class App extends React.Component{
+
+            constructor(){
+                super()
+
+                this.state = {
+                    tempoBom: true
+                }
+            }
+
+            render(){
+
+                return(
+                    this.state.tempoBom && <p>O tempo está bom</p>
+                )
+
+                // ==================================================================
+
+                // Renderização condicional 3 - Método ternário (condição ternária)
+
+                //return(
+                //    this.state.tempoBom ? <p>O tempo está bom</p> : <p>O tempo está ruim</p>
+                //)
+
+                // ==================================================================
+                
+                // Renderização condicional 2 - Usando variável
+
+                //let texto
+
+                //if(this.state.tempoBom){
+                //    texto = <p>O tempo está bom</p>
+                //} else {
+                //    texto = <p>O tempo está ruim</p>
+                //}
+
+                //return texto
+
+                // ==================================================================
+
+                // Renderização condicional 1 - if-else
+
+                //if(this.state.tempoBom){
+                //    return <p>O tempo está bom</p>
+                //} else {
+                //    return <p>O tempo está ruim</p>
+                //}
+
+            }
+
+        }
+
+        const root = document.getElementById('root');
+        ReactDOM.render(<App />, root);
+    </script>
+
+</body>
+</html>
