@@ -1,5 +1,8 @@
 # Curso de React básico
 ## Sys4soft (João Ribeiro)
+
+### [Vídeos do curso](https://www.youtube.com/watch?v=C8M94QLJy0o&list=PLXik_5Br-zO9YVs9bxi7zoQlKq59VPTX1)
+
 ### Lista de aulas
 
 Aula 02 - Preparação do ambiente de trabalho  
